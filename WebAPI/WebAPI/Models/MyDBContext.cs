@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WebAPI.Models
 {
-    public class DonationDBContext:DbContext
+    public class MyDBContext:DbContext
     {
-        public DonationDBContext(DbContextOptions<DonationDBContext> options):base(options)
+        public MyDBContext(DbContextOptions<MyDBContext> options):base(options)
         {
 
         }

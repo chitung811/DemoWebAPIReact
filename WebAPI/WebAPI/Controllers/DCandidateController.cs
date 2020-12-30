@@ -13,9 +13,9 @@ namespace WebAPI.Controllers
     [ApiController]
     public class DCandidateController : ControllerBase
     {
-        private readonly DonationDBContext _context;
+        private readonly MyDBContext _context;
 
-        public DCandidateController(DonationDBContext context)
+        public DCandidateController(MyDBContext context)
         {
             _context = context;
         }
@@ -31,25 +31,25 @@ namespace WebAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<DCandidate>> GetDCandidate(int id)
         {
-            var dCandidate = await _context.DCandidates.FindAsync(id);
+            var DCandidate = await _context.DCandidates.FindAsync(id);
 
-            if (dCandidate == null)
+            if (DCandidate == null)
             {
                 return NotFound();
             }
 
-            return dCandidate;
+            return DCandidate;
         }
 
         // PUT: api/DCandidate/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutDCandidate(int id, DCandidate dCandidate)
+        public async Task<IActionResult> PutDCandidate(int id, DCandidate DCandidate)
         {
-            dCandidate.id = id;
+            DCandidate.id = id;
 
-            _context.Entry(dCandidate).State = EntityState.Modified;
+            _context.Entry(DCandidate).State = EntityState.Modified;
 
             try
             {
@@ -74,28 +74,28 @@ namespace WebAPI.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
-        public async Task<ActionResult<DCandidate>> PostDCandidate(DCandidate dCandidate)
+        public async Task<ActionResult<DCandidate>> PostDCandidate(DCandidate DCandidate)
         {
-            _context.DCandidates.Add(dCandidate);
+            _context.DCandidates.Add(DCandidate);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetDCandidate", new { id = dCandidate.id }, dCandidate);
+            return CreatedAtAction("GetDCandidate", new { id = DCandidate.id }, DCandidate);
         }
 
         // DELETE: api/DCandidate/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<DCandidate>> DeleteDCandidate(int id)
         {
-            var dCandidate = await _context.DCandidates.FindAsync(id);
-            if (dCandidate == null)
+            var DCandidate = await _context.DCandidates.FindAsync(id);
+            if (DCandidate == null)
             {
                 return NotFound();
             }
 
-            _context.DCandidates.Remove(dCandidate);
+            _context.DCandidates.Remove(DCandidate);
             await _context.SaveChangesAsync();
 
-            return dCandidate;
+            return DCandidate;
         }
 
         private bool DCandidateExists(int id)

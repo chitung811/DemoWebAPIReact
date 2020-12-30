@@ -8212,11 +8212,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Hoc Tap\\Tài liệu .net\\demo\\DemoProject\\WebAPI\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Hoc Tap\\Tài liệu .net\\BanNop\\DemoWebAPIReact\\WebAPI\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Hoc Tap\\Tài liệu .net\\demo\\DemoProject\\WebAPI\\WebAPI\\WebAPI.csproj",
+      "projectPath": "C:\\Hoc Tap\\Tài liệu .net\\BanNop\\DemoWebAPIReact\\WebAPI\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\chitu\\.nuget\\packages\\",
-      "outputPath": "C:\\Hoc Tap\\Tài liệu .net\\demo\\DemoProject\\WebAPI\\WebAPI\\obj\\",
+      "outputPath": "C:\\Hoc Tap\\Tài liệu .net\\BanNop\\DemoWebAPIReact\\WebAPI\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

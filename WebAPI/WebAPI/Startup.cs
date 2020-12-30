@@ -28,7 +28,7 @@ namespace WebAPI
         {
             services.AddControllers();
 
-            services.AddDbContext<DonationDBContext>(options =>
+            services.AddDbContext<MyDBContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
 
 

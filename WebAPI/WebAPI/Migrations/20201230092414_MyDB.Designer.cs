@@ -8,9 +8,9 @@ using WebAPI.Models;
 
 namespace WebAPI.Migrations
 {
-    [DbContext(typeof(DonationDBContext))]
-    [Migration("20200115115809_InitialCreate")]
-    partial class InitialCreate
+    [DbContext(typeof(MyDBContext))]
+    [Migration("20201230092414_MyDB")]
+    partial class MyDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,7 +20,7 @@ namespace WebAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("WebAPI.Models.DCandidate", b =>
+            modelBuilder.Entity("WebAPI.Models.Employee", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -47,7 +47,7 @@ namespace WebAPI.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("DCandidates");
+                    b.ToTable("Employees");
                 });
 #pragma warning restore 612, 618
         }

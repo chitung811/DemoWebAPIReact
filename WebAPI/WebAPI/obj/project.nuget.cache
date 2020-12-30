@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qj+OCubqTFQGsZK217XGpB3I+2Zw32pRxSaN7M62UcGG6SKrMZXUQS6pdSyYYIynMJkGYVS0i7HZ0affMYP9gQ==",
+  "dgSpecHash": "tszJs1Qoyecf3qXhfBuDrgo2kH9Efo2QRqKPMfRjm/CEEcZKr2l9BgggVY9pjIcvdEvij7TQacanMqH0JmPNYA==",
   "success": true,
-  "projectFilePath": "C:\\Hoc Tap\\Tài liệu .net\\demo\\DemoProject\\WebAPI\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Hoc Tap\\Tài liệu .net\\BanNop\\DemoWebAPIReact\\WebAPI\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chitu\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\chitu\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

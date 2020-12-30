@@ -2,12 +2,12 @@
 
 namespace WebAPI.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class MyDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "DCandidates",
+                name: "Employees",
                 columns: table => new
                 {
                     id = table.Column<int>(nullable: false)
@@ -21,14 +21,14 @@ namespace WebAPI.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_DCandidates", x => x.id);
+                    table.PrimaryKey("PK_Employees", x => x.id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "DCandidates");
+                name: "Employees");
         }
     }
 }
